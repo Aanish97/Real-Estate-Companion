@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="420dp"
+        android:layout_height="200dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="50dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="50dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55">
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:background="#3b5998"
+            android:text="Delete"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_above="@id/textView2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:background="#3b5998"
+            android:text="Cancel"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:background="#3b5998"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+
+            android:text="If you want to delete this post add. Then press DELETE else CANCEL" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
